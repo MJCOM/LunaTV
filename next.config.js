@@ -7,10 +7,11 @@ const nextConfig = {
     dirs: ['src'],
   },
 
-  reactStrictMode: false,
+  reactStrictMode: true,
   swcMinify: false,
 
   experimental: {
+    runtime: 'edge',
     instrumentationHook: process.env.NODE_ENV === 'production',
   },
 
